@@ -44,10 +44,10 @@ const JourneyDetails = () => {
 
   return (
     <form
-      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg"
+      className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg my-10 border border-red-600"
       onSubmit={handleSubmit}
     >
-      <div className="mb-4">
+      <div className="">
         <label
           htmlFor="journeyType"
           className="block text-gray-700 font-bold mb-2 text-left"
@@ -164,6 +164,7 @@ const JourneyDetails = () => {
           required
           className="block w-full border border-gray-300 rounded-md p-2 text-left"
         />
+        <button type="button" className="rounded-md border border-gray-300 my-2 p-1 hover:bg-blue-200">Fill with AI</button>
       </div>
 
       <div className="flex justify-end">

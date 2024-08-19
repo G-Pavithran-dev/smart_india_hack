@@ -21,6 +21,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import ReactMarkdown from "react-markdown";
 
 export default function ViewComplaints() {
   const [complaints, setComplaints] = useState([]);
@@ -44,8 +45,10 @@ export default function ViewComplaints() {
 
   return (
     <div>
-      <div className='text-3xl text-black flex justify-center mt-[3dvh] mb-[0dvh]'>Complaints</div>
-      
+      <div className="text-3xl text-black flex justify-center mt-[3dvh] mb-[0dvh]">
+        Complaints
+      </div>
+
       {/* Dropdown for filtering by department */}
       <div className="mb-[3dvh] w-[95%] text-black  flex justify-end ">
         <select
@@ -54,7 +57,7 @@ export default function ViewComplaints() {
           className="px-4 py-2 border rounded"
         >
           <option value="">All Departments</option>
-          {uniqueDepartments.map(department => (
+          {uniqueDepartments.map((department) => (
             <option key={department} value={department}>
               {department}
             </option>
@@ -62,35 +65,46 @@ export default function ViewComplaints() {
         </select>
       </div>
 
-      <Table className="">
+      <Table className="w-11/12 mx-auto">
         <TableHeader className="bg-black">
-          <TableRow >
+          <TableRow>
             <TableHead className="text-white">Category</TableHead>
             <TableHead className="text-white">Department</TableHead>
-            <TableHead className="text-white">PNR Number</TableHead>
+            <TableHead className="text-white">Priority</TableHead>
             <TableHead className="text-white">Description</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {filteredComplaints.map((complaint) => (
             <TableRow key={complaint.pnrNumber}>
-              <TableCell className="font-medium">{complaint.category}</TableCell>
+              <TableCell className="font-medium">
+                {complaint.category}
+              </TableCell>
               <TableCell>{complaint.department}</TableCell>
-              <TableCell>{complaint.pnrNumber}</TableCell>
+              <TableCell>{complaint.priority}</TableCell>
               <Dialog>
                 <DialogTrigger asChild>
-                  <TableCell><Button>View</Button></TableCell>
+                  <TableCell>
+                    <Button>View</Button>
+                  </TableCell>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-md">
+                <DialogContent className="sm:max-w-lg">
                   <DialogHeader>
-                    <DialogTitle className="mb-[3%]">Description</DialogTitle>
+                    <DialogTitle className="mb-[2%]">Description</DialogTitle>
                     <DialogDescription>
-                      {complaint.description}
+                      <ReactMarkdown
+                        className={`font-normal markdown p-3 leading-relaxed`}
+                        children={complaint.description}
+                      />
                     </DialogDescription>
                   </DialogHeader>
                   <DialogFooter className="sm:justify-start">
                     <DialogClose asChild>
-                      <Button className="mt-[8%]" type="button" variant="secondary">
+                      <Button
+                        className="mt-[1%]"
+                        type="button"
+                        variant="secondary"
+                      >
                         Close
                       </Button>
                     </DialogClose>
@@ -102,5 +116,5 @@ export default function ViewComplaints() {
         </TableBody>
       </Table>
     </div>
-  );
+  )
 }

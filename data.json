@@ -1,124 +1,25 @@
 {
-    "complaints": [
-      {
-        "category": "Service",
-        "department": "Customer Support",
-        "description": "The service was not up to the mark. The representative was unhelpful, and the issue was not resolved even after multiple calls.",
-        "pnrNumber": "PNR123456"
-      },
-      {
-        "category": "Service",
-        "department": "Customer Support",
-        "description": "Had to wait a long time before someone picked up my call, and even then, the issue remained unresolved.",
-        "pnrNumber": "PNR123457"
-      },
-      {
-        "category": "Service",
-        "department": "Customer Support",
-        "description": "The agent was rude and did not listen to the full problem. I had to call back multiple times to get a solution.",
-        "pnrNumber": "PNR123458"
-      },
-      {
-        "category": "Service",
-        "department": "Customer Support",
-        "description": "Service was slow, and the representative had a lack of knowledge about the product.",
-        "pnrNumber": "PNR123459"
-      },
-      {
-        "category": "Service",
-        "department": "Customer Support",
-        "description": "The issue was partially resolved but the representative did not follow up as promised.",
-        "pnrNumber": "PNR123460"
-      },
-      {
-        "category": "Billing",
-        "department": "Finance",
-        "description": "Incorrect charges on the bill. I was charged for services that I never received.",
-        "pnrNumber": "PNR234567"
-      },
-      {
-        "category": "Billing",
-        "department": "Finance",
-        "description": "Late fees were added to my account incorrectly, even though I paid on time.",
-        "pnrNumber": "PNR234568"
-      },
-      {
-        "category": "Billing",
-        "department": "Finance",
-        "description": "Overcharged for services. The bill amount was much higher than what was agreed upon.",
-        "pnrNumber": "PNR234569"
-      },
-      {
-        "category": "Billing",
-        "department": "Finance",
-        "description": "Charged for an upgrade that I did not authorize. The billing system seems to have a glitch.",
-        "pnrNumber": "PNR234570"
-      },
-      {
-        "category": "Billing",
-        "department": "Finance",
-        "description": "The billing statement is confusing and difficult to understand. The charges are not clearly broken down.",
-        "pnrNumber": "PNR234571"
-      },
-      {
-        "category": "Technical",
-        "department": "IT Support",
-        "description": "The website is down frequently, causing inconvenience while accessing services.",
-        "pnrNumber": "PNR345678"
-      },
-      {
-        "category": "Technical",
-        "department": "IT Support",
-        "description": "The app crashes often, especially when trying to make a payment. It's very frustrating.",
-        "pnrNumber": "PNR345679"
-      },
-      {
-        "category": "Technical",
-        "department": "IT Support",
-        "description": "Unable to log in to my account despite resetting the password multiple times.",
-        "pnrNumber": "PNR345680"
-      },
-      {
-        "category": "Technical",
-        "department": "IT Support",
-        "description": "The system is slow, and it takes too long to load pages. This has been ongoing for weeks.",
-        "pnrNumber": "PNR345681"
-      },
-      {
-        "category": "Technical",
-        "department": "IT Support",
-        "description": "Issues with the payment gateway. Transactions are often declined for no reason.",
-        "pnrNumber": "PNR345682"
-      },
-      {
-        "category": "Delivery",
-        "department": "Logistics",
-        "description": "The package was delivered late, causing me to miss an important deadline.",
-        "pnrNumber": "PNR456789"
-      },
-      {
-        "category": "Delivery",
-        "department": "Logistics",
-        "description": "The package was damaged upon arrival. The box was crushed, and the contents were broken.",
-        "pnrNumber": "PNR456790"
-      },
-      {
-        "category": "Delivery",
-        "department": "Logistics",
-        "description": "The courier left the package outside without ringing the bell, and it was stolen.",
-        "pnrNumber": "PNR456791"
-      },
-      {
-        "category": "Delivery",
-        "department": "Logistics",
-        "description": "Received the wrong package. It was meant for someone else.",
-        "pnrNumber": "PNR456792"
-      },
-      {
-        "category": "Delivery",
-        "department": "Logistics",
-        "description": "The tracking information was inaccurate, and I had no idea when the package would arrive.",
-        "pnrNumber": "PNR456793"
-      }
-    ]
-  }
+  "complaints": [
+    {
+      "id": 0.2608242696194605,
+      "department": "Railway Safety",
+      "category": "Passenger Safety",
+      "priority": "High",
+      "description": "**Subject:**  Overcrowding and dangerous travel conditions on trains.\n\n**Description:**\n* The image shows a train with a large number of passengers travelling on the exterior of the train, hanging out of the doors and windows. This is an extremely dangerous practice that puts the lives of passengers at risk. \n* This situation is unacceptable and needs to be addressed immediately.\n* The Railway Department needs to take action to prevent overcrowding on trains and ensure that passengers are travelling safely.\n\n**Recommendations:**\n* Increase the number of trains and carriages to accommodate the demand for travel.\n* Implement stricter measures to prevent passengers from travelling on the exterior of the train.\n* Educate passengers about the dangers of travelling on the exterior of the train.\n*  Enforce safety regulations and penalties for those who violate them. \n\n**Action Requested:**\n* Investigate the situation and take appropriate action to prevent overcrowding and ensure passenger safety.\n* Implement a plan to address the root cause of overcrowding and ensure safe travel conditions."
+    },
+    {
+      "id": 0.8150262053500152,
+      "department": "Railway Catering",
+      "category": "Food Quality",
+      "priority": "High",
+      "description": "- **Subject:** Unhygienic food served on train\n- **Description:**  The food provided in the train was unhygienic and not fit for consumption. The omelette was not cooked properly and the bread was stale. This is a serious health hazard and should not be tolerated."
+    },
+    {
+      "id": 0.5345002650996094,
+      "department": "Rolling Stock",
+      "category": "Coach Maintenance",
+      "priority": "Medium",
+      "description": "- **Subject:** Dirty and Unhygienic Coach\n- **Description:** The coach appears to be dirty and in need of cleaning. The windows are also dirty, which can affect the passenger's view and overall experience."
+    }
+  ]
+}
